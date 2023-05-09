@@ -24,7 +24,22 @@ This project is the implementation of a cinema tickets service using technologie
 ## 📑 Project Structure
 ### Packages
 - `config`: contains configuration files for defining the application context and providing beans
-- `controller`: contains controllers for endpoints with access for user roles and CustomGlobalExceprionHandler
+- `controller`: contains controllers for endpoints with access for user roles and CustomGlobalExceprionHandler 
+  - Endpoints for user and admin access [Postman Collection](https://www.postman.com/olenamatus/workspace/test-cinemaapp/collection/6983754-b59d7872-3864-4fe1-812b-eb9176dd8806?action=share&creator=6983754)
+    - `POST: /register` - all
+    - `GET: /cinema-halls` - user/admin
+    - `GET: /movie-sessions/available` - user/admin
+    - `GET: /movies` - user/admin
+    - `POST: /cinema-halls` - admin
+    - `POST: /movies` - admin
+    - `POST: /movie-sessions` - admin
+    - `PUT: /movie-sessions/{id}` - admin
+    - `DELETE: /movie-sessions/{id}` - admin
+    - `GET: /users/by-email` - admin
+    - `GET: /orders` - user
+    - `POST: /orders/complete` - user
+    - `PUT: /shopping-carts/movie-sessions` - user
+    - `GET: /shopping-carts/by-user` - user
 - `dao`: contains ability to access and manipulate data in db
 - `dto`: contains transfer data objects for rendering and moving data between application layers
 - `exception`: contains custom exception (DataProcessingException)
@@ -35,20 +50,5 @@ This project is the implementation of a cinema tickets service using technologie
 - `resources`: contains db.properties for db connection data
 
 ![image](https://user-images.githubusercontent.com/124172595/236883102-d2d2d9f6-1c40-4495-91b3-0affe41ad889.png)
-## 👉 Endpoints for user and admin access
-- `POST: /register` - all
-- `GET: /cinema-halls` - user/admin
-- `GET: /movie-sessions/available` - user/admin
-- `GET: /movies` - user/admin
-- `POST: /cinema-halls` - admin
-- `POST: /movies` - admin
-- `POST: /movie-sessions` - admin
-- `PUT: /movie-sessions/{id}` - admin
-- `DELETE: /movie-sessions/{id}` - admin
-- `GET: /users/by-email` - admin
-- `GET: /orders` - user
-- `POST: /orders/complete` - user
-- `PUT: /shopping-carts/movie-sessions` - user
-- `GET: /shopping-carts/by-user` - user
 ## ✍️ Authors 
 [Helen Matus](https://github.com/HelenMatus)
