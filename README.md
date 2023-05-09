@@ -8,13 +8,13 @@ This project is the implementation of a cinema tickets service using technologie
 - Movie session update
 - Implemented endpoints for user and admin access
 ## 👩‍💻 Used technologies:
-- JDK 17 version
-- Maven 3.1.1 version
-- Spring 5.3.20 version
-- Spring Security 5.6.10 version
-- Hibernate 5.6.14 version
-- MySql 8.0.22 version
-- Apache Tomcat 9.0.73 version
+- JDK `17` version
+- Maven `3.1.1` version
+- Spring `5.3.20` version
+- Spring Security `5.6.10` version
+- Hibernate `5.6.14` version
+- MySql `8.0.22` version
+- Apache Tomcat `9.0.73` version
 ## ⏱️ Getting Started
 - Clone this github repository
 - Create empty schema using MySQL
@@ -23,32 +23,32 @@ This project is the implementation of a cinema tickets service using technologie
 - Deploy the application using Tomcat
 ## 📑 Project Structure
 ### Packages
-- config: contains configuration files for defining the application context and providing beans
-- controller: contains controllers for endpoints with access for user roles and CustomGlobalExceprionHandler
-- dao: contains ability to access and manipulate data in db
-- dto: contains transfer data objects for rendering and moving data between application layers
-- exception: contains custom exception (DataProcessingException)
-- lib: contains validators and annotations for email and password
-- model: contains models for db 
-- service: contains mappers for dtos and services that responsible for the business logic of the application
-- util: contains date and time formatting util
-- resources: contains db.properties for db connection data
+- `config`: contains configuration files for defining the application context and providing beans
+- `controller`: contains controllers for endpoints with access for user roles and CustomGlobalExceprionHandler
+- `dao`: contains ability to access and manipulate data in db
+- `dto`: contains transfer data objects for rendering and moving data between application layers
+- `exception`: contains custom exception (DataProcessingException)
+- `lib`: contains validators and annotations for email and password
+- `model`: contains models for db 
+- `service`: contains mappers for dtos and services that responsible for the business logic of the application
+- `util`: contains date and time formatting util
+- `resources`: contains db.properties for db connection data
 
 ![image](https://user-images.githubusercontent.com/124172595/236883102-d2d2d9f6-1c40-4495-91b3-0affe41ad889.png)
 ## 👉 Endpoints for user and admin access
-- POST: /register - all
-- GET: /cinema-halls - user/admin
-- GET: /movie-sessions/available - user/admin
-- GET: /movies - user/admin
-- POST: /cinema-halls - admin
-- POST: /movies - admin
-- POST: /movie-sessions - admin
-- PUT: /movie-sessions/{id} - admin
-- DELETE: /movie-sessions/{id} - admin
-- GET: /users/by-email - admin
-- GET: /orders - user
-- POST: /orders/complete - user
-- PUT: /shopping-carts/movie-sessions - user
-- GET: /shopping-carts/by-user - user
+- `POST: /register` - all
+- `GET: /cinema-halls` - user/admin
+- `GET: /movie-sessions/available` - user/admin
+- `GET: /movies` - user/admin
+- `POST: /cinema-halls` - admin
+- `POST: /movies` - admin
+- `POST: /movie-sessions` - admin
+- `PUT: /movie-sessions/{id}` - admin
+- `DELETE: /movie-sessions/{id}` - admin
+- `GET: /users/by-email` - admin
+- `GET: /orders` - user
+- `POST: /orders/complete` - user
+- `PUT: /shopping-carts/movie-sessions` - user
+- `GET: /shopping-carts/by-user` - user
 ## ✍️ Authors 
 [Helen Matus](https://github.com/HelenMatus)
