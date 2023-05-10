@@ -1,5 +1,5 @@
 # 🎬 CinemaApp
-This project is the implementation of a cinema tickets service using technologies Java Spring, Hibernate and SQL. It allows registrer user and admin, get, create, update and remove certain application elements.
+This project is the implementation of a cinema tickets service using technologies Java Spring, Hibernate and SQL. It allows registrer user and admin, get, create, update and remove certain application elements. You can find how the application works on this [link](https://www.loom.com/share/1e92afc7174f4f62b463f47f414f8629).
 ## 📜 Features
 - Registration with two roles (admin, user)
 - Login with username and password
